@@ -314,16 +314,16 @@
         <div class="columnTwoRound">
             <div class="participantRound">
                 <button class="participantSelectTabRound" onclick="switchTabs2('scheduleRound1','t11','t22')">
-                    <img src="img/round1Select.png" alt="" id="t11">
+                    <img src="img/round1UnSelect.png" alt="" id="t11">
                 </button>    
             </div>
             <div class="participantRound" >
-                <button class="participantSelectTabRound" onclick="switchTabs2('scheduleRound2','t22','t11')" disabled>
-                    <img src="img/round2UnSelect.png" alt="" id="t22">
+                <button class="participantSelectTabRound" onclick="switchTabs2('scheduleRound2','t22','t11')" >
+                    <img src="img/round2Select.png" alt="" id="t22">
                 </button>
             </div>
         </div>
-        <div id="scheduleRound1" class="tabs2">
+        <div id="scheduleRound1" class="tabs2" style="display: none;">
             <div class="gameType">
                 <div>
                     
@@ -466,31 +466,31 @@
                 </div>
             </div>
         </div>
-        <div id="scheduleRound2" class="tabs2" style="display: none;">
-            <div class="gameType">
-                <div>
+        <div id="scheduleRound2" class="tabs2" >
+            <div class="gameType gameType1">
+                <!-- <div>
                     
                     <button class="gameTypeBtn" onclick="switchGame1('danceRound2','dance2','sing2','fashion2','shayari2')">
                         <img src="img/dancingSelect.png" alt="" id="dance2">
                     </button>
-                </div>
+                </div> -->
                 <div>
-                    <button class="gameTypeBtn" onclick="switchGame1('singRound2','sing2','dance2','fashion2','shayari2')">
-                        <img src="img/singingUnSelect.png" alt="" id="sing2">
+                    <button class="gameTypeBtn" onclick="switchGame1('singRound2','sing2','fashion2')">
+                        <img src="img/singingSelect.png" alt="" id="sing2">
                     </button>
                 </div>
                 <div>
-                    <button class="gameTypeBtn" onclick="switchGame1('fashionRound2','fashion2','sing2','dance2','shayari2')">
+                    <button class="gameTypeBtn" onclick="switchGame1('fashionRound2','fashion2','sing2')">
                         <img src="img/fashionUnSelect.png" alt="" id="fashion2">
                     </button>
                 </div>
-                <div>
+                <!-- <div>
                     <button class="gameTypeBtn" onclick="switchGame('shayariRound2','shayari2','dance2','sing2','fashion2')">
                         <img src="img/shayari_button_unselect.png" alt="" id="shayari2">
                     </button>
-                </div>
+                </div> -->
             </div>
-            <div id="danceRound2" class="game1">
+            <div id="danceRound2" class="game1" style="display: none;">
                 <div class="title">
                     <img src="img/Schedule Typo.png" alt="">
                 </div>
@@ -535,7 +535,7 @@
                     </table>
                 </div>
             </div>
-            <div id="singRound2" class="game1" style="display: none;">
+            <div id="singRound2" class="game1" >
                 <div class="title">
                     <img src="img/Schedule Typo.png" alt="">
                 </div>
@@ -701,7 +701,7 @@
         </div>
     </div>
     <script>
-             function switchGame1(tabToOpen,btnSelect,btnUnselect1,btnUnselect2,btnUnselect3){
+             function switchGame1(tabToOpen,btnSelect,btnUnselect1){
   let content1=document.getElementsByClassName('game1');
   for(i=0;i<content1.length;i++){
     
@@ -711,36 +711,36 @@
     
   }
   
-  if(btnSelect == 'dance2'){
-    document.getElementById(tabToOpen).style.display="block";
-    document.getElementById(btnSelect).src="img/dancingSelect.png";
-    document.getElementById(btnUnselect1).src="img/singingUnSelect.png";
-    document.getElementById(btnUnselect2).src="img/fashionUnSelect.png";
-    document.getElementById(btnUnselect3).src="img/shayari_button_unselect.png";
-  }
+//   if(btnSelect == 'dance2'){
+//     document.getElementById(tabToOpen).style.display="block";
+//     document.getElementById(btnSelect).src="img/dancingSelect.png";
+//     document.getElementById(btnUnselect1).src="img/singingUnSelect.png";
+//     document.getElementById(btnUnselect2).src="img/fashionUnSelect.png";
+//     document.getElementById(btnUnselect3).src="img/shayari_button_unselect.png";
+//   }
   
   if(btnSelect == 'sing2'){
     document.getElementById(tabToOpen).style.display="block";
     document.getElementById(btnSelect).src="img/singingSelect.png";
-    document.getElementById(btnUnselect1).src="img/dancingUnselect.png";
-    document.getElementById(btnUnselect2).src="img/fashionUnSelect.png";
-    document.getElementById(btnUnselect3).src="img/shayari_button_unselect.png";
+    document.getElementById(btnUnselect1).src="img/fashionUnSelect.png";
+    // document.getElementById(btnUnselect2).src="img/fashionUnSelect.png";
+    // document.getElementById(btnUnselect3).src="img/shayari_button_unselect.png";
   }
   
   if(btnSelect == 'fashion2'){
     document.getElementById(tabToOpen).style.display="block";
     document.getElementById(btnSelect).src="img/fashionSelect.png";
     document.getElementById(btnUnselect1).src="img/singingUnSelect.png";
-    document.getElementById(btnUnselect2).src="img/dancingUnselect.png";
-    document.getElementById(btnUnselect3).src="img/shayari_button_unselect.png";
+    // document.getElementById(btnUnselect2).src="img/dancingUnselect.png";
+    // document.getElementById(btnUnselect3).src="img/shayari_button_unselect.png";
   }
-  if(btnSelect == 'shayari2'){
-    document.getElementById(tabToOpen).style.display="block";
-    document.getElementById(btnSelect).src="img/shayari_button_select.png";
-    document.getElementById(btnUnselect3).src="img/fashionUnSelect.png";
-    document.getElementById(btnUnselect2).src="img/singingUnSelect.png";
-    document.getElementById(btnUnselect1).src="img/dancingUnselect.png";
-  }
+//   if(btnSelect == 'shayari2'){
+//     document.getElementById(tabToOpen).style.display="block";
+//     document.getElementById(btnSelect).src="img/shayari_button_select.png";
+//     document.getElementById(btnUnselect3).src="img/fashionUnSelect.png";
+//     document.getElementById(btnUnselect2).src="img/singingUnSelect.png";
+//     document.getElementById(btnUnselect1).src="img/dancingUnselect.png";
+//   }
 }
         function switchGame(tabToOpen,btnSelect,btnUnselect1,btnUnselect2,btnUnselect3){
   let content1=document.getElementsByClassName('game');
