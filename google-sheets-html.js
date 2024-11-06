@@ -15,7 +15,7 @@ google.load('visualization', '1', {
 var visualization;
 
 function drawVisualization() {
-    var query = new google.visualization.Query('https://docs.google.com/spreadsheets/d/1FS3w-D76uropSrlY6WsAIV4tuC6xWyJvZIxVATBtM1Y/edit#gid=0');
+    var query = new google.visualization.Query('https://docs.google.com/spreadsheets/d/1t7lB4jfDRKuEXNYE1TJSxwlnZhwqADyqN0mX944iZDw/edit?gid=0#gid=0');
     query.setQuery('SELECT A, B, C label A "Id", B "Timings", C "TALENT Name"');
     query.send(handleQueryResponse);
       $('#img_bulk_anim').show();
@@ -123,49 +123,54 @@ function rowsCount(item){
   if(counter == 2){
     $('#bronzeRankFrame').append('<img src="" id="u_img_'+id+'" alt="" class="imgClass3"><br><p class="newText">'+times+'<br> Sk ID:<a href="http://www.kktv1.com/m/?roomid='+id+'">'+id+'</a><br>'+name+'<img src="img/bean-min.png" alt="" class="imgClass4"></p>');
   }
-  if(counter>=3   &&  counter<10){
+  if(counter>=3   &&  counter<24){
      $('#conDiv').append('<div class="strip"><div class="posi"><span>'+(counter+1)+'</span></div><div><img src="" id="u_img_'+id+'" alt="" class="imgclassSmall"></div><div class="textLeft"><p>'+times+'<br> Sk ID:<a href="http://www.kktv1.com/m/?roomid='+id+'">'+id+'</a></p></div><div><p>'+name+'<img src="img/bean-min.png" alt="" class="imgClass4"></p></div></div>');
     
   }
-  if(counter == 11)
-  {
-    $('#silverRankFrame1').append('<img src="" id="u_img_'+id+'" alt="" class="imgClass1"><br><p class="newText">'+times+'<br> Sk ID:<a href="http://www.kktv1.com/m/?roomid='+id+'">'+id+'</a><br>'+name+'<img src="img/bean-min.png" alt="" class="imgClass4"></p>');
-  }
-  if(counter == 10){
-    $('#goldRankFrame1').append('<img src="" id="u_img_'+id+'" alt="" class="imgClass2"><br><p class="newText">'+times+'<br> Sk ID:<a href="http://www.kktv1.com/m/?roomid='+id+'">'+id+'</a><br>'+name+'<img src="img/bean-min.png" alt="" class="imgClass4"></p>');
-  }
-  if(counter == 12){
-    $('#bronzeRankFrame1').append('<img src="" id="u_img_'+id+'" alt="" class="imgClass3"><br><p class="newText">'+times+'<br> Sk ID:<a href="http://www.kktv1.com/m/?roomid='+id+'">'+id+'</a><br>'+name+'<img src="img/bean-min.png" alt="" class="imgClass4"></p>');
-  }
-  if(counter>=13   &&  counter<14){
-     $('#conDiv1').append('<div class="strip"><div class="posi"><span>'+(counter1+1)+'</span></div><div><img src="" id="u_img_'+id+'" alt="" class="imgclassSmall"></div><div class="textLeft"><p>'+times+'<br> Sk ID:<a href="http://www.kktv1.com/m/?roomid='+id+'">'+id+'</a></p></div><div><p>'+name+'<img src="img/bean-min.png" alt="" class="imgClass4"></p></div></div>');
-    counter1++;
-  }
-  if(counter == 15)
+
+  //other approach
+//   if(counter == 25)
+//   {
+//     $('#silverRankFrame1').append('<img src="" id="u_img_'+id+'" alt="" class="imgClass1"><br><p class="newText">'+times+'<br> Sk ID:<a href="http://www.kktv1.com/m/?roomid='+id+'">'+id+'</a><br>'+name+'<img src="img/bean-min.png" alt="" class="imgClass4"></p>');
+//   }
+//   if(counter == 24){
+//     $('#goldRankFrame1').append('<img src="" id="u_img_'+id+'" alt="" class="imgClass2"><br><p class="newText">'+times+'<br> Sk ID:<a href="http://www.kktv1.com/m/?roomid='+id+'">'+id+'</a><br>'+name+'<img src="img/bean-min.png" alt="" class="imgClass4"></p>');
+//   }
+//   if(counter == 26){
+//     $('#bronzeRankFrame1').append('<img src="" id="u_img_'+id+'" alt="" class="imgClass3"><br><p class="newText">'+times+'<br> Sk ID:<a href="http://www.kktv1.com/m/?roomid='+id+'">'+id+'</a><br>'+name+'<img src="img/bean-min.png" alt="" class="imgClass4"></p>');
+//   }
+//   if(counter>=26   &&  counter<34){
+//      $('#conDiv1').append('<div class="strip"><div class="posi"><span>'+(counter1+1)+'</span></div><div><img src="" id="u_img_'+id+'" alt="" class="imgclassSmall"></div><div class="textLeft"><p>'+times+'<br> Sk ID:<a href="http://www.kktv1.com/m/?roomid='+id+'">'+id+'</a></p></div><div><p>'+name+'<img src="img/bean-min.png" alt="" class="imgClass4"></p></div></div>');
+//     counter1++;
+//   }
+  //another code
+
+
+  if(counter == 25)
   {
     $('#silverRankFrame2').append('<img src="" id="u_img_'+id+'" alt="" class="imgClass1"><br><p class="newText">'+times+'<br> Sk ID:<a href="http://www.kktv1.com/m/?roomid='+id+'">'+id+'</a><br>'+name+'<img src="img/bean-min.png" alt="" class="imgClass4"></p>');
   }
-  if(counter == 14){
+  if(counter == 24){
     $('#goldRankFrame2').append('<img src="" id="u_img_'+id+'" alt="" class="imgClass2"><br><p class="newText">'+times+'<br> Sk ID:<a href="http://www.kktv1.com/m/?roomid='+id+'">'+id+'</a><br>'+name+'<img src="img/bean-min.png" alt="" class="imgClass4"></p>');
   }
-  if(counter == 16){
+  if(counter == 26){
     $('#bronzeRankFrame2').append('<img src="" id="u_img_'+id+'" alt="" class="imgClass3"><br><p class="newText">'+times+'<br> Sk ID:<a href="http://www.kktv1.com/m/?roomid='+id+'">'+id+'</a><br>'+name+'<img src="img/bean-min.png" alt="" class="imgClass4"></p>');
   }
-  if(counter>=17   &&  counter<18){
+  if(counter>=26   &&  counter<30){
      $('#conDiv2').append('<div class="strip"><div class="posi"><span>'+(counter2+1)+'</span></div><div><img src="" id="u_img_'+id+'" alt="" class="imgclassSmall"></div><div class="textLeft"><p>'+times+'<br> Sk ID:<a href="http://www.kktv1.com/m/?roomid='+id+'">'+id+'</a></p></div><div><p>'+name+'<img src="img/bean-min.png" alt="" class="imgClass4"></p></div></div>');
     counter2++;
   }
-  if(counter == 19)
+  if(counter == 31)
   {
     $('#silverRankFrame3').append('<img src="" id="u_img_'+id+'" alt="" class="imgClass1"><br><p class="newText">'+times+'<br> Sk ID:<a href="http://www.kktv1.com/m/?roomid='+id+'">'+id+'</a><br>'+name+'<img src="img/bean-min.png" alt="" class="imgClass4"></p>');
   }
-  if(counter == 18){
+  if(counter == 30){
     $('#goldRankFrame3').append('<img src="" id="u_img_'+id+'" alt="" class="imgClass2"><br><p class="newText">'+times+'<br> Sk ID:<a href="http://www.kktv1.com/m/?roomid='+id+'">'+id+'</a><br>'+name+'<img src="img/bean-min.png" alt="" class="imgClass4"></p>');
   }
-  if(counter == 20){
+  if(counter == 32){
     $('#bronzeRankFrame3').append('<img src="" id="u_img_'+id+'" alt="" class="imgClass3"><br><p class="newText">'+times+'<br> Sk ID:<a href="http://www.kktv1.com/m/?roomid='+id+'">'+id+'</a><br>'+name+'<img src="img/bean-min.png" alt="" class="imgClass4"></p>');
   }
-  if(counter>=21   &&  counter<22){
+  if(counter>=33   &&  counter<40){
      $('#conDiv3').append('<div class="strip"><div class="posi"><span>'+(counter3+1)+'</span></div><div><img src="" id="u_img_'+id+'" alt="" class="imgclassSmall"></div><div class="textLeft"><p>'+times+'<br> Sk ID:<a href="http://www.kktv1.com/m/?roomid='+id+'">'+id+'</a></p></div><div><p>'+name+'<img src="img/bean-min.png" alt="" class="imgClass4"></p></div></div>');
     counter3++;
   }
