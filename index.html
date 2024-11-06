@@ -613,17 +613,17 @@
 
     <div class="columnTwo">
         <div class="participant">
-            <button class="participantSelectTab" onclick="selectTab('userReward','user','talent')">
-                <img src="img/userSelect.png" alt="" id="user">
+            <button class="participantSelectTab" onclick="selectTab1('userReward1','user1','talent1')">
+                <img src="img/userSelect.png" alt="" id="user1">
             </button>    
         </div>
         <div class="participant">
-            <button class="participantSelectTab" onclick="selectTab('talentReward','talent','user')">
-                <img src="img/talentUnSelect.png" alt="" id="talent">
+            <button class="participantSelectTab" onclick="selectTab1('talentReward1','talent1','user1')">
+                <img src="img/talentUnSelect.png" alt="" id="talent1">
             </button>
         </div>
     </div>
-    <div id="userReward" class="content">
+    <div id="userReward1" class="content">
         <div class="title">
             <img src="img/Leaderboard Typo.png" alt="">
         </div>
@@ -655,27 +655,27 @@
     </div>
 
     <!-- leaderboard -->
-    <div id="talentReward" class="content" style="display: none;">
+    <div id="talentReward1" class="content" style="display: none;">
         <div id="scheduleRound1" class="tabs2">
-            <div class="gameType">
-                <div>
+            <div class="gameType gameType1">
+                <!-- <div>
                     
-                    <button class="gameTypeBtn" onclick="switchGame('danceRound1','dance1','sing1','fashion1')">
-                        <img src="img/dancingSelect.png" alt="" id="dance1">
+                    <button class="gameTypeBtn" onclick="switchGame3('danceRound11','dance11','sing11','fashion11')">
+                        <img src="img/dancingSelect.png" alt="" id="dance11">
+                    </button>
+                </div> -->
+                <div>
+                    <button class="gameTypeBtn" onclick="switchGame3('singRound11','sing11','fashion11')">
+                        <img src="img/singingSelect.png" alt="" id="sing11">
                     </button>
                 </div>
                 <div>
-                    <button class="gameTypeBtn" onclick="switchGame('singRound1','sing1','dance1','fashion1')">
-                        <img src="img/singingUnSelect.png" alt="" id="sing1">
-                    </button>
-                </div>
-                <div>
-                    <button class="gameTypeBtn" onclick="switchGame('fashionRound1','fashion1','sing1','dance1')">
-                        <img src="img/fashionUnSelect.png" alt="" id="fashion1">
+                    <button class="gameTypeBtn" onclick="switchGame3('fashionRound11','fashion11','sing11')">
+                        <img src="img/fashionUnSelect.png" alt="" id="fashion11">
                     </button>
                 </div>
             </div>
-            <div id="danceRound1" class="game">
+            <!-- <div id="danceRound11" class="game">
                 <div class="title">
                     <img src="img/Leaderboard Typo.png" alt="">
                 </div>
@@ -701,8 +701,8 @@
                         
                     </div>
                 </div>
-            </div>
-            <div id="singRound1" class="game" style="display: none;">
+            </div> -->
+            <div id="singRound11" class="game">
                 <div class="title">
                     <img src="img/Leaderboard Typo.png" alt="">
                 </div>
@@ -729,7 +729,7 @@
                     </div>
                 </div>
             </div>
-            <div id="fashionRound1" class="game" style="display: none;">
+            <div id="fashionRound11" class="game" style="display: none;">
                 <div class="title">
                     <img src="img/Leaderboard Typo.png" alt="">
                 </div>
@@ -952,6 +952,62 @@ function openGuide(){
   document.getElementById('modal').style.display="block";
   document.getElementById('overlay').style.overflowY="hidden";
 }
+
+// leaderboard
+
+function selectTab1(tabToOpen,btnSelect,btnUnselect){
+        let content=document.getElementsByClassName('content');
+        for (let i of content)
+         {
+             i.style.display = "none";
+         }
+         document.getElementById(tabToOpen).style.display = "block";
+         if(btnSelect == 'user1'){
+          document.getElementById(btnSelect).src="img/userSelect.png";
+          document.getElementById(btnUnselect).src="img/talentUnSelect.png";
+         }
+         if(btnSelect == 'talent1'){
+          document.getElementById(btnSelect).src="img/talentSelect.png";
+          document.getElementById(btnUnselect).src="img/userUnSelect.png";
+         }
+}
+
+function switchGame3(tabToOpen,btnSelect,btnUnselect1){
+  let content1=document.getElementsByClassName('game');
+  for(i=0;i<content1.length;i++){
+    
+      
+      content1[i].style.display="none";
+    
+    
+  }
+  
+//   if(btnSelect == 'dance11'){
+//     document.getElementById(tabToOpen).style.display="block";
+//     document.getElementById(btnSelect).src="img/dancingSelect.png";
+//     document.getElementById(btnUnselect1).src="img/singingUnSelect.png";
+//     document.getElementById(btnUnselect2).src="img/fashionUnSelect.png";
+//   }
+  
+  if(btnSelect == 'sing11'){
+    document.getElementById(tabToOpen).style.display="block";
+    document.getElementById(btnSelect).src="img/singingSelect.png";
+    document.getElementById(btnUnselect1).src="img/fashionUnSelect.png";
+    // document.getElementById(btnUnselect2).src="img/fashionUnSelect.png";
+  }
+  
+  if(btnSelect == 'fashion11'){
+    document.getElementById(tabToOpen).style.display="block";
+    document.getElementById(btnSelect).src="img/fashionSelect.png";
+    document.getElementById(btnUnselect1).src="img/singingUnSelect.png";
+    // document.getElementById(btnUnselect2).src="img/dancingUnselect.png";
+  }
+}
+
+
+
+
+
     </script>
 </body>
 </html>
