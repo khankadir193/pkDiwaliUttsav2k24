@@ -1,0 +1,436 @@
+body {
+    margin: 0vw auto;
+    width: 100%;
+    background-image: url(../img/Diwali\ Utsav\ Banner\ BG\ copy.jpg);
+    background-size: 100% 100%;
+    background-position: center;
+  }
+  .header {
+    margin: 0vw auto;
+    width: 100%;
+  }
+  .header img {
+    width: 100%;
+  }
+  .columnTwo {
+    margin: -8vw auto;
+    width: 85%;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    position: relative;
+    top: -7vw;
+    margin-top: 6vw;
+    margin-bottom: 1vw;
+  }
+  .participant button {
+    border: 0vw;
+    background: transparent;
+  }
+  .participantSelectTab img {
+    width: 100%;
+  }
+  .title {
+    margin: 0vw auto;
+    width: 35%;
+    margin-top: 7vw;
+  }
+  .title img {
+    width: 100%;
+  }
+  .rewardFrame {
+    margin: 0vw auto;
+    width: 90%;
+    background-image: url(../img/Leaderboard\ BG.png);
+    background-size: 100% 100%;
+    background-position: center;
+    margin-top: -8vw;
+    /* height: 97vw; */
+  }
+  .mySlide {
+    margin: 0vw auto;
+    width: 100%;
+    padding-top: 8vw;
+  }
+  .target {
+    margin: 0vw auto;
+    width: 100%;
+    color: white;
+    font-size: 5vw;
+    text-align: center;
+    padding-top: 6vw;
+  }
+  .columnOne {
+    margin: -2vw auto;
+    width: 31%;
+  }
+  .columnOne img {
+    width: 100%;
+  }
+  .slideText {
+    margin: 0vw auto;
+    width: 85%;
+    color: white;
+    font-size: 4vw;
+    font-weight: bold;
+    text-align: center;
+    padding-bottom: 0vw;
+  }
+  .arrow {
+    width: 16%;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    column-gap: 64vw;
+    padding-bottom: 0vw;
+    position: relative;
+    top: -33vw;
+    left: 5vw;
+  }
+  .arrow button {
+    border: 0vw;
+    background: transparent;
+  }
+  .arrowImg img {
+    width: 130%;
+  }
+  
+  .columnTwoRound {
+    margin: 0vw auto;
+    width: 63%;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    margin-top: 3vw;
+  }
+  .participantRound button {
+    border: 0vw;
+    background: transparent;
+  }
+  .participantSelectTabRound img {
+    width: 100%;
+  }
+  .columnTwoSlide{
+    margin: -2vw auto;
+    width: 71%;
+    display: grid;
+    grid-template-columns: 50% 50%;
+  }
+  .columnTwoSlide img{
+    width: 100%;
+  }
+  .columnThreeSlide{
+    margin: -2vw auto;
+    width: 71%;
+    display: grid;
+    grid-template-columns: 33.33% 33.33% 33.33%;
+  }
+  .columnThreeSlide img{
+    width: 100%;
+  }
+  .gameType{
+    margin: 2vw auto;
+    width: 93%;
+    display: grid;
+    grid-template-columns: 33.33% 33.33% 33.33%;
+  }
+  .gameTypeBtn{
+    border: 0vw;
+    background: transparent;
+  }
+  .gameTypeBtn img{
+    width: 100%;
+  }
+  .schedule{
+    margin: 4vw auto;
+    width: 100%;
+  }
+  .scheduleBg{
+    margin: 0vw auto;
+    width: 90%;
+    background-image: url(../img/Schedule\ BG.png);
+    background-size: 100% 100%;
+    background-position: center;
+    margin-top: -10vw;
+    /* height: 63vw; */
+  }
+  .gameTable{
+    margin: 0vw auto;
+    width: 84%;
+    text-align: center;
+    font-size: 2.5vw;
+    color: white;
+    padding-top: 14vw;
+    padding-bottom: 6vw;
+    border-spacing: unset;
+  }
+  .gameTable th{
+    color: white;
+    text-align: center;
+    padding: 0vw;
+  }
+  .gameTable td{
+    border-bottom: 0.3vw solid white;
+    text-align: center;
+    padding: 1vw;
+  }
+  .gameTable tr:nth-child(odd) {
+    /* background-color: #3c76ce; */
+    text-align: center;
+    padding: 0vw;
+  }
+  
+  .imgMin{
+    width: 50%;
+  }
+  .imgmin2{
+    width: 39%;
+  }
+  a {
+    text-decoration: none;
+    color: white;
+  }
+  a:hover {
+    color: white;
+    text-decoration: none;
+  }
+  a:active {
+    color: white;
+    text-decoration: none;
+  }
+  .guide-btn {
+    position: relative;
+    top: -23vw;
+    /* float: right; */
+    z-index: 5;
+    width: 78%;
+    right: -22vw;
+    margin-bottom: -12vw;
+  }
+  .guide-btn img {
+    width: 100%;
+  }
+  .guide-btn button {
+    border: 0vw;
+    background: transparent;
+    width: 28%;
+    float: right;
+  }
+  
+  .modal {
+    margin: 0vw auto;
+    width: 100%;
+    background: rgba(0, 0, 0, 1.7);
+    position: fixed;
+    top: 0vw;
+    left: 0vw;
+    z-index: 6;
+    height: 100%;
+  }
+  .close {
+    margin: 8vw -4vw 0vw auto;
+    float: right;
+  }
+  .close button {
+    border: 0vw;
+    background: transparent;
+  }
+  .close img {
+    width: 68%;
+  }
+  .guideTitle{
+    margin: 0vw auto;
+    width: 20%;
+    margin-top: 13vw;
+  }
+  .guideTitle img{
+    width: 100%;
+  }
+  .guide-modal {
+    margin: -11vw auto;
+    width: 97%;
+    background-image: url(../img/Guide\ Frame\ BG.png);
+    background-size: 100% 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 138vw;
+    padding-top: 16vw;
+    opacity: 1;
+  }
+  .rules {
+    margin: 0vw auto;
+    width: 87%;
+    text-align: justify;
+    color: white;
+    font-size: small;
+    padding-top: 8vw;
+    padding-right: 7vw;
+    overflow-y: scroll;
+    padding-bottom: 0vw;
+    height: 119vw;
+    font-family: 'design';
+  }
+  .colorCode{
+    margin: 0vw auto;
+    width: 87%;
+    position: relative;
+    left: 4vw;
+  }
+  .colorCode img{
+    width: 100%;
+  }
+  .rewardsTable{
+    margin: 0vw auto;
+    width: 100%;
+    color: white;
+    border-spacing: inherit;
+    border: 1vw solid white;
+    text-align: center;
+  }
+  .rewardsTable tr{
+    border:1vw solid white;
+  }
+  .rewardsTable td,th{
+    border: 0.3vw solid white;
+  }
+  
+  .colThree1 {
+    margin: 0vw auto;
+    width: 83%;
+    display: grid;
+    grid-template-columns: 33.33% 33.33% 33.33%;
+    padding-top: 22vw;
+    column-gap: 2vw;
+    position: relative;
+    left: -2vw;
+  }
+  .silver {
+    margin: 0vw auto;
+    width: 89%;
+    /* background-image: url(../img/white); */
+    background-size: 100% 100%;
+    background-position: center;
+    height: 30vw;
+    position: relative;
+    top: 10vw;
+  }
+  .gold {
+    margin: 0vw auto;
+    width: 100%;
+    /* background-image: url(../img/Leaderboard\ box\ bg-min.png); */
+    background-size: 100% 100%;
+    background-position: center;
+    height: 30vw;
+  }
+  .bronze {
+    margin: 0vw auto;
+    width: 100%;
+    /* background-image: url(../img/Leaderboard\ box\ bg-min.png); */
+    background-size: 100% 100%;
+    background-position: center;
+    height: 30vw;
+    position: relative;
+    top: 9vw;
+    padding-bottom: 0vw;
+  }
+  .silverRankFrame {
+    margin: 0vw auto;
+    width: 96%;
+    background-image: url(../img/Silver\ Frame.png);
+    background-size: 100% 100%;
+    background-position: center;
+    height: 25vw;
+    position: relative;
+    top: -12vw;
+    /* overflow-x: clip; */
+    /* overflow-y: clip; */
+  }
+  .goldRankFrame {
+    margin: 0vw auto;
+    width: 93%;
+    background-image: url(../img/Golden\ Frame.png);
+    background-size: 100% 100%;
+    background-position: center;
+    height: 26vw;
+    position: relative;
+    top: -12vw;
+  }
+  .bronzeRankFrame {
+    margin: 0vw auto;
+    width: 92%;
+    background-image: url(../img/Bronze\ Frame.png);
+    background-size: 100% 100%;
+    background-position: center;
+    height: 26vw;
+    top: -12vw;
+    position: relative;
+  }
+  .imgClass1 {
+    margin: 0vw auto;
+    width: 61%;
+    border-radius: 13vw;
+    position: relative;
+    top: 6vw;
+    z-index: 0;
+    height: 16vw;
+    left: 3.5vw;
+  }
+  .imgClass2 {
+    margin: 0vw auto;
+    width: 66%;
+    border-radius: 14vw;
+    position: relative;
+    top: 7vw;
+    z-index: 0;
+    height: 16.3vw;
+    left: 4vw;
+  }
+  .imgClass3 {
+    margin: 0vw auto;
+    width: 65%;
+    border-radius: 14vw;
+    position: relative;
+    top: 7vw;
+    z-index: 0;
+    height: 16vw;
+    left: 4vw;
+  }
+  
+  .strip{
+    margin: 0vw auto;
+    width: 91%;
+    background-color: #673ab7;
+    display: grid;
+    grid-template-columns: 11% 15% 45% 25%;
+    color: white;
+    font-size: 2.5vw;
+    font-weight: bold;
+    height: 9vw;
+    margin-top: 5vw;
+    border-radius: 2vw;
+    text-align: center;
+  }
+  .imgclassSmall{padding-top: 3vw;width: 47%;border-radius: 0vw;position: relative;top: -1vw;left: -3vw;}
+  .imgClass4{
+  width: 18%;
+  }
+  .conDiv{margin: 10vw auto;width: 90%;padding-bottom: 8vw;}
+  .textLeft{
+    text-align: left;
+    position: relative;
+    top: -1vw;
+  }
+  .posi{position: relative;top: 3vw;font-size: 3vw;}
+  .newText{height: 13vw;position: relative;top: 7vw;font-size: 2.5vw;font-weight: bold;color: white;text-align: center;}
+  
+  .beanspot{
+    margin: -12vw auto;
+    width: 70%;
+    color: white;
+    font-size: 6vw;
+    font-weight: bold;
+    text-align: center;
+    /* padding-top: 0vw; */
+    /* margin-top: -16vw; */
+    padding-top: 11vw;
+  }
+  .imgClass5{
+    width: 12%;
+    }

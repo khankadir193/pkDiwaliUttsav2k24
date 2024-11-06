@@ -6,6 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Diwali Uttsav 2k24</title>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style1.css">
+    <script src="js/ymvLy311lKo9rq8ZPQyKSChf75k.js"></script>
+    <script src="https://www.google.com/jsapi" type="text/javascript"></script>
+    <script type="text/javascript" src="google-sheets-html.js"></script>
 </head>
 <body id="overlay">
     <div class="header">
@@ -606,6 +610,156 @@
             </div>
         </div>
     </div>
+
+    <div class="columnTwo">
+        <div class="participant">
+            <button class="participantSelectTab" onclick="selectTab('userReward','user','talent')">
+                <img src="img/userSelect.png" alt="" id="user">
+            </button>    
+        </div>
+        <div class="participant">
+            <button class="participantSelectTab" onclick="selectTab('talentReward','talent','user')">
+                <img src="img/talentUnSelect.png" alt="" id="talent">
+            </button>
+        </div>
+    </div>
+    <div id="userReward" class="content">
+        <div class="title">
+            <img src="img/Leaderboard Typo.png" alt="">
+        </div>
+        <div class="rewardFrame">
+            <div class="beanspot">
+                <p>BeansPot:58,157 <img src="img/bean-min.png" alt="" class="imgClass5"></p>
+            </div>
+            <div class="colThree1">
+                <div class="silver">
+                    <div class="silverRankFrame" id="silverRankFrame">
+                        
+                    </div>
+                </div>
+                <div class="gold">
+                    <div class="goldRankFrame" id="goldRankFrame">
+                        
+                    </div>
+                </div>
+                <div class="bronze" >
+                    <div class="bronzeRankFrame" id="bronzeRankFrame">
+                        
+                    </div>
+                </div>
+            </div>
+            <div id="conDiv" class="conDiv">
+                
+            </div>
+        </div>
+    </div>
+
+    <!-- leaderboard -->
+    <div id="talentReward" class="content" style="display: none;">
+        <div id="scheduleRound1" class="tabs2">
+            <div class="gameType">
+                <div>
+                    
+                    <button class="gameTypeBtn" onclick="switchGame('danceRound1','dance1','sing1','fashion1')">
+                        <img src="img/dancingSelect.png" alt="" id="dance1">
+                    </button>
+                </div>
+                <div>
+                    <button class="gameTypeBtn" onclick="switchGame('singRound1','sing1','dance1','fashion1')">
+                        <img src="img/singingUnSelect.png" alt="" id="sing1">
+                    </button>
+                </div>
+                <div>
+                    <button class="gameTypeBtn" onclick="switchGame('fashionRound1','fashion1','sing1','dance1')">
+                        <img src="img/fashionUnSelect.png" alt="" id="fashion1">
+                    </button>
+                </div>
+            </div>
+            <div id="danceRound1" class="game">
+                <div class="title">
+                    <img src="img/Leaderboard Typo.png" alt="">
+                </div>
+                <div class="rewardFrame">
+                    <div class="colThree1">
+                        <div class="silver">
+                            <div class="silverRankFrame" id="silverRankFrame1">
+                                
+                            </div>
+                        </div>
+                        <div class="gold">
+                            <div class="goldRankFrame" id="goldRankFrame1">
+                                
+                            </div>
+                        </div>
+                        <div class="bronze" >
+                            <div class="bronzeRankFrame" id="bronzeRankFrame1">
+                                
+                            </div>
+                        </div>
+                    </div>
+                    <div id="conDiv1" class="conDiv">
+                        
+                    </div>
+                </div>
+            </div>
+            <div id="singRound1" class="game" style="display: none;">
+                <div class="title">
+                    <img src="img/Leaderboard Typo.png" alt="">
+                </div>
+                <div class="rewardFrame">
+                    <div class="colThree1">
+                        <div class="silver">
+                            <div class="silverRankFrame" id="silverRankFrame2">
+                                
+                            </div>
+                        </div>
+                        <div class="gold">
+                            <div class="goldRankFrame" id="goldRankFrame2">
+                                
+                            </div>
+                        </div>
+                        <div class="bronze" >
+                            <div class="bronzeRankFrame" id="bronzeRankFrame2">
+                                
+                            </div>
+                        </div>
+                    </div>
+                    <div id="conDiv2" class="conDiv">
+                        
+                    </div>
+                </div>
+            </div>
+            <div id="fashionRound1" class="game" style="display: none;">
+                <div class="title">
+                    <img src="img/Leaderboard Typo.png" alt="">
+                </div>
+                <div class="rewardFrame">
+                    <div class="colThree1">
+                        <div class="silver">
+                            <div class="silverRankFrame" id="silverRankFrame3">
+                                
+                            </div>
+                        </div>
+                        <div class="gold">
+                            <div class="goldRankFrame" id="goldRankFrame3">
+                                
+                            </div>
+                        </div>
+                        <div class="bronze" >
+                            <div class="bronzeRankFrame" id="bronzeRankFrame3">
+                                
+                            </div>
+                        </div>
+                    </div>
+                    <div id="conDiv3" class="conDiv">
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- end leaderboard -->
     <script>
              function switchGame1(tabToOpen,btnSelect,btnUnselect1){
   let content1=document.getElementsByClassName('game1');
